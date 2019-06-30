@@ -49,6 +49,18 @@
     height: 150px;
     background-size: 110%;
   }
+
+  .about-info {
+    grid-template-areas:
+      "bio-image"
+      "bio"
+      "skills-1"
+      "skills-2"
+      "skills-3"
+      "skills-4";
+
+    grid-template-columns: 1fr;
+  }
 }
 
 // Smartphones

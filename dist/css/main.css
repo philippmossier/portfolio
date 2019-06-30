@@ -90,43 +90,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-  #pic {
-    background: url("../img/myPortrait.jpg");
-    width: 150px;
-    height: 150px;
-    background-size: 110%; } }
-
-@media screen and (max-width: 500px) {
-  main {
-    padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
-    main .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem; } }
-
 * {
   box-sizing: border-box; }
 
@@ -180,7 +143,8 @@ header {
   color: #eece1a; }
 
 main {
-  padding: 4rem; }
+  padding: 4rem;
+  min-height: calc(100vh-60px); }
   main .icons {
     margin-top: 1rem; }
   main a {
@@ -192,3 +156,86 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bio-image bio-image bio bio" "skills-1 skills-2 skills-3 skills-4";
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .about-info .bio-image {
+    grid-area: bio-image;
+    margin: auto;
+    border-radius: 50%;
+    border: #eece1a 3px solid;
+    width: 250px;
+    height: 250px; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .skills-1 {
+    grid-area: skills-1; }
+  .about-info .skills-2 {
+    grid-area: skills-2; }
+  .about-info .skills-3 {
+    grid-area: skills-3; }
+  .about-info .skills-4 {
+    grid-area: skills-4; }
+  .about-info .skills {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid;
+    text-align: center;
+    padding: 3rem 0.1rem; }
+    .about-info .skills li {
+      font-size: 24px;
+      list-style-type: none;
+      margin-right: 2.3rem; }
+    .about-info .skills i {
+      font-size: 4rem; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+  #pic {
+    background: url("../img/myPortrait.jpg");
+    width: 150px;
+    height: 150px;
+    background-size: 110%; }
+  .about-info {
+    grid-template-areas: "bio-image" "bio" "skills-1" "skills-2" "skills-3" "skills-4";
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; } }
