@@ -64,6 +64,10 @@ main {
       }
   }  
   }
+  &#about{
+    padding: 1rem 4rem;
+    
+  }  
 
   &#home {
     overflow: hidden;
@@ -71,6 +75,10 @@ main {
       margin-top: 20vh;
     }
   }
+
+  
+    
+  
 }
 
 // Grid Template Areas
@@ -123,6 +131,11 @@ main {
       font-size: 24px;
       list-style-type: none;
       margin-right: 2.3rem;
+      font-weight: 350;
+    }
+
+    h2{
+      font-weight: 700;
     }
 
     i {
@@ -147,6 +160,33 @@ main {
       @include easeOut;
     }
 
+  }
+}
+
+// Contact page 
+
+.boxes {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size:2rem;
+    border:3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span{
+        color:set-text-color($secondary-color);
+      }
+    }
   }
 }
 
@@ -175,6 +215,8 @@ main {
   background: lighten($primary-color, 50);
   color: #333;
 }
+
+
 
 
 #main-footer {
