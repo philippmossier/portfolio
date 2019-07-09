@@ -162,7 +162,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bio-image bio-image bio bio" "skills-1 skills-2 skills-3 skills-4";
+  grid-template-areas: "bio-image bio bio bio" "skills-1 skills-2 skills-3 skills-4";
   grid-template-columns: 1fr 1fr 1fr 1fr; }
   .about-info .bio-image {
     grid-area: bio-image;
@@ -173,6 +173,8 @@ main {
     height: 250px; }
   .about-info .bio {
     grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .bio-text {
     font-size: 1.5rem; }
   .about-info .skills-1 {
     grid-area: skills-1; }

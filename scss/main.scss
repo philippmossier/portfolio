@@ -87,7 +87,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bio-image bio-image bio bio"
+    "bio-image bio bio bio"
     "skills-1 skills-2 skills-3 skills-4";
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -103,6 +103,10 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+  }
+
+  .bio-text {
+    font-size:1.5rem;
   }
 
   .skills-1 {
