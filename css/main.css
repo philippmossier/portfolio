@@ -122,7 +122,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -175,7 +175,7 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .bio-text {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .about-info .skills-1 {
     grid-area: skills-1; }
   .about-info .skills-2 {
@@ -186,10 +186,9 @@ main {
     grid-area: skills-4; }
   .about-info .skills {
     background: #496364;
-    padding: 0.5rem;
     border-bottom: #d8cc1e 5px solid;
     text-align: center;
-    padding: 3rem 0.1rem; }
+    padding: 2rem 0.1rem; }
     .about-info .skills li {
       font-size: 24px;
       list-style-type: none;
