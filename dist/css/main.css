@@ -54,7 +54,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/myPortrait.jpg");
+      background: url("../img/myPortraitSmall.jpg");
       border: solid 3px #d8cc1e;
       border-radius: 50%;
       background-size: 110%; }
@@ -162,7 +162,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bio-image bio bio bio" "skills-1 skills-2 skills-3 skills-4";
+  grid-template-areas: "bio-image bio bio bio"
+ "skills-1 skills-2 skills-3 skills-4";
   grid-template-columns: 1fr 1fr 1fr 1fr; }
   .about-info .bio-image {
     grid-area: bio-image;
@@ -290,7 +291,12 @@ main {
     height: 150px;
     background-size: 110%; }
   .about-info {
-    grid-template-areas: "bio-image" "bio" "skills-1" "skills-2" "skills-3" "skills-4";
+    grid-template-areas: "bio-image"
+ "bio"
+ "skills-1"
+ "skills-2"
+ "skills-3"
+ "skills-4";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
